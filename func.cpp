@@ -288,11 +288,22 @@ void autotest4()
 	c = a * b;
 	
 	cout<<"c = "<<c<<endl;
+	double epsilon = 0.000000000001;
 
-    if (abs(c - 8.0) < std::numeric_limits<double>::epsilon())
+    if (abs(c - 8.0) < epsilon)
+	{
 		cout << "Test 4: OK!" << endl;
+		//cout<<abs(c-8.0)<<endl;
+		//cout<<epsilon<<endl;
+	}
+		
 	else 
+	{
 		cout << "Test 4: FAILED!" << endl;
+		//cout<<abs(c-8.0)<<endl;
+		//cout<<std::numeric_limits<double>::epsilon()<<endl;
+	}
+	
 	
 	cout<<endl;
 	
