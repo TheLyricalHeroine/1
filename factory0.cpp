@@ -8,5 +8,5 @@ CVector* CVector0Factory::Create()
 	double *v1{};
 	int len1 = 0;
 	string FileName1 = "";
-	return new CVector0(v1, len1, FileName1);
+	return new CVector0(len1);
 }
